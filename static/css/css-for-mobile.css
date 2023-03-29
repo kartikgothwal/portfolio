@@ -1,0 +1,104 @@
+body {
+    overflow-x: hidden;
+}
+
+.body-container {
+
+    overflow-x: hidden;
+}
+
+.hero-left a {
+    font-size: 1.4rem;
+}
+
+#header {
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.hero-right,
+.hero-left {
+    margin-right: -25px;
+    margin-left: -25px;
+}
+
+.container {
+    /* border: 2px solid; */
+    height: 52rem;
+}
+
+#intro-heading,
+.profile-intro {
+    text-align: center;
+    font-size: 2.6rem;
+    width: 21rem;
+    /* line-height: 70px; */
+}
+
+#intro-heading {
+
+    margin-top: 1px;
+}
+
+.home-content {
+    height: 84rem;
+}
+
+.shape img {
+    height: 22rem;
+    width: 25rem;
+}
+
+.shape {
+    height: 19rem;
+    width: 17rem;
+}
+
+#img-of-about-sections {
+    height: 310px;
+    width: 358px;
+}
+
+#about-para-sub-heading {
+    padding: 0px 60px;
+}
+
+#about-para {
+    padding: 10px 85px;
+}
+
+#My-projects-heading {
+    padding: 0px 45px;
+}
+
+.projects-details {
+    width: 21.5rem;
+}
+
+.project-img {
+    width: 19rem;
+    height: 19rem
+}
+
+.project-picture {
+    width: 19rem;
+    height: 19rem
+}
+
+.project-tech {
+    justify-content: space-around;
+    gap: 0px;
+}
+
+.contact-content {
+    width: 0px;
+}
+
+#footer {
+    width: 101%;
+    height: 11rem;
+}
+
+.left-side-of-footer h1 {
+    text-align: center;
+}

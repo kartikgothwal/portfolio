@@ -1,0 +1,108 @@
+body {
+    width: 100%;
+}
+.home-content{
+    height: 40rem;
+}
+.container {
+    gap: 0px;
+ 
+    top: 4rem;
+
+    /* border: 2px solid; */
+    padding: 25px;
+}
+
+#header {
+    justify-content: center;
+    gap: 12rem;
+}
+
+.profile-intro,
+#intro-heading {
+    font-size: 3rem;
+}
+
+.profile-para {
+    line-height: 2.2rem;
+}
+
+.shape {
+    height: 20rem;
+    width: 16rem;
+    margin-left: 2rem;
+}
+
+.skills-container {
+    gap: 28px;
+    margin: auto;
+    padding-left: 5rem
+}
+
+.animated-image {
+    position: relative;
+    top: 9px;
+}
+
+.skills-container-heading {
+    width: 13rem;
+}
+
+.skills-container-heading span {
+    margin: 5px 15px;
+    width: 1px;
+    display: inline-block;
+}
+
+.skills-sections {
+    top: 4rem;
+}
+
+.about-me {
+    /* border: 2px solid; */
+    padding: 0px 12px;
+    padding-top: 3rem;
+}
+.about-text{
+    position: relative;
+    right: 10px;
+}
+
+.about-container {
+    gap: 3rem;
+}
+
+.headings-of-contents {
+    font-size: 17px;
+    line-height: 49px;
+}
+
+#about-para {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#about-para-sub-heading {
+    font-size: 19px;
+}
+
+.projects-details {
+    /* border: 2px solid; */
+    flex-direction: column;
+    width: 41rem;
+    height: 45rem;
+    align-items: center;
+}
+
+.projects {
+    height: 205rem;
+}
+
+.Yolo-cafe,
+.Quotes-website {
+    flex-direction: column-reverse;
+}
+
+#footer {
+    padding: 5rem 3rem;
+}
