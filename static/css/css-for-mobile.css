@@ -89,11 +89,21 @@ body {
     justify-content: space-around;
     gap: 0px;
 }
-
+.weather-application .about-project, .Quotes-website .about-project {
+    position: relative;
+    top: 2rem;
+    height: 22rem;
+}
+.second-row-of-project-tech{
+    top: 24px;
+    gap: 2rem;
+}
 .contact-content {
     width: 0px;
 }
-
+.project-links{
+    font-size: 17px;
+}
 #footer {
     width: 101%;
     height: 11rem;

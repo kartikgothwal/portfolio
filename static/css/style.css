@@ -206,15 +206,15 @@ body {
   font-size: 33px;
   cursor: pointer;
   position: relative;
-  top: 15px;
+  /* top: 15px; */
   color: #1f2024;
 }
 
-.fa-github {
+.fa-github{
   margin-left: 10px;
 }
 
-.fa-brands:hover {
+.social-links:hover {
   color: var(--real-blue-color);
 }
 
@@ -417,6 +417,10 @@ body {
   height: 4rem;
   align-items: center;
 }
+.with-code-project-tech{
+  display: flex;
+  flex-direction: column;
+}
 
 .tech-heading {
   /* border: 2px solid; */
@@ -431,6 +435,56 @@ body {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   border-radius: 5px;
+}
+.project-links{
+ text-decoration: none;
+ color: var(--black-color);
+ font-size: 19px;
+ display: flex;
+ align-items: center;
+ padding: 3px;
+ font-family: Poppins;
+ transition: 0.3s all;
+}
+.project-links:hover{
+  color: var(--blue-color);
+}
+.project-tech-row{
+  display: flex;
+  gap: 10px;
+}
+.second-row-of-project-tech{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+}
+.weather-application,.Quotes-website{
+  height: 25.2rem;
+}
+.Quotes-website .project-img, .weather-application .project-img{
+  position: relative;
+  /* top: 2rem; */
+}
+.icons{
+  font-size: 33px;
+  color: black;
+  padding-left: 7px;
+}
+.fa-link{
+  font-size: 30px;
+}
+.git-icon{
+  position: relative;
+  top: 0px;
+  margin: 0;
+
+}
+.github-icons{
+  margin-left: 10px;
 }
 
 .contact {
