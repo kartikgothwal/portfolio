@@ -58,6 +58,12 @@ body {
     height: 310px;
     width: 358px;
 }
+.skills-images ul{
+    border: 3px solid;
+}
+
+
+
 
 #about-para-sub-heading {
     padding: 0px 60px;
