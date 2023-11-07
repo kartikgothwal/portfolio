@@ -193,10 +193,7 @@ const projects = [
         name: "Bcrypt.js ",
         color: "green-text-gradient",
       },
-      {
-        name: "Nodemailer ",
-        color: "green-text-gradient",
-      },
+     
     ],
     image: carrent,
     source_code_link: {
