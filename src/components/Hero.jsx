@@ -32,7 +32,7 @@ const Hero = () => {
           <h3
             className={`${styles.heroSubText} text-secondary font-normal text-sm md:text-xl  text-gray-850 leading-[30px]`}
           >
-            <span>JavaScript /</span> <span> MERN /  </span>
+            <span>JavaScript /</span> <span> MERN / </span>
             <span>Redux / RTK Query /</span>
             <span>Tailwind / </span>
             <span>Firebase /</span>
@@ -49,7 +49,7 @@ const Hero = () => {
           </motion.p>
         </motion.div>
       </div>
-      {/* <ComputersCanvas />  */}
+      <ComputersCanvas /> 
       <div className="absolute w-full bottom-5 mx-auto flex items-start justify-center">
         <a href="#about">
           <div className="border-4 border-secondary flex justify-center items-center h-[64px] w-[35px] rounded-3xl">
