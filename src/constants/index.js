@@ -78,12 +78,10 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-
   {
     name: "Express JS",
     icon: ExpressJS,
   },
-
   {
     name: "MongoDB",
     icon: mongodb,
