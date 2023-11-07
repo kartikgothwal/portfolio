@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`${styles.paddingX} bg-primary z-20 fixed py-5 top-0 flex w-full items-center`}
+      className={`${styles.paddingX}  bg-primary z-20 fixed py-5 top-0 flex w-full items-center`}
     >
       <div className="w-full flex justify-between max-w-7xl items-center mx-auto">
         <Link
@@ -21,7 +21,7 @@ const Navbar = () => {
           className="flex items-center justify-center gap-4"
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white cursor-pointer font-bold text-[18px]">
+          <p className="hover:text-secondary transition-colors duration-150 ease-in text-white cursor-pointer font-bold text-[18px]">
             Kartik Gothwal
           </p>
         </Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
             return (
               <li
                 key={link.id}
-                className={` hover:text-white font-medium text-[18px] cursor-pointer ${
+                className={` hover:text-white transition-colors duration-150 ease-in font-medium text-[18px] cursor-pointer ${
                   active === link.title ? "text-white" : "text-secondary"
                 }`}
                 onClick={() => setActive(link.title)}

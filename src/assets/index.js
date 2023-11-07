@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import Wave from "./Wave.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -18,9 +18,10 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
+import ExpressJS from "./tech/ExpreesJS.png";
+import StyledComponents from "./tech/StyledComponents.png";
+import WhatsAppClone from "./WhatsAppClone.png";
+import YoloCafe from "./YoloCafe.jpg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -31,6 +32,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  Wave,
   logo,
   backend,
   creator,
@@ -44,14 +46,14 @@ export {
   figma,
   git,
   html,
+  ExpressJS,
+  StyledComponents,
   javascript,
   mongodb,
   nodejs,
   reactjs,
   redux,
   tailwind,
-  typescript,
-  threejs,
   meta,
   shopify,
   starbucks,
@@ -59,4 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  WhatsAppClone,
+  YoloCafe,
 };
