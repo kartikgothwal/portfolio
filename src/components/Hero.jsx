@@ -45,7 +45,7 @@ const Hero = () => {
             className={`${styles.heroSubText} mt-4`}
           >
             A passionate Full Stack Developer based in{" "}
-            <br className="sm:block hidden" /> Indore, Madhya Pradesh. 📍
+            <br className="sm:block hidden" /> Indore, Madhya Pradesh.
           </motion.p>
         </motion.div>
       </div>
