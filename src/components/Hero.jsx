@@ -49,7 +49,7 @@ const Hero = () => {
           </motion.p>
         </motion.div>
       </div>
-      <ComputersCanvas /> 
+      {/* <ComputersCanvas />  */}
       <div className="absolute w-full bottom-5 mx-auto flex items-start justify-center">
         <a href="#about">
           <div className="border-4 border-secondary flex justify-center items-center h-[64px] w-[35px] rounded-3xl">
