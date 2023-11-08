@@ -21,6 +21,10 @@ import {
   carrent,
   WhatsAppClone,
   YoloCafe,
+  emailsocial,
+  githubsocial,
+  linkedinsocial,
+  twittersocial,
 } from "../assets";
 
 export const navLinks = [
@@ -163,8 +167,6 @@ const experiences = [
   },
 ];
 
- 
-
 const projects = [
   {
     name: "Car Rental Store",
@@ -191,7 +193,6 @@ const projects = [
         name: "Bcrypt.js ",
         color: "green-text-gradient",
       },
-     
     ],
     image: carrent,
     source_code_link: {
@@ -258,5 +259,27 @@ const projects = [
     },
   },
 ];
+const socials = [
+  {
+    name: "LinkedIn",
+    icon: linkedinsocial,
+    link: "https://www.linkedin.com/in/kartikgothwal/",
+  },
+  {
+    name: "Github",
+    icon: githubsocial,
+    link: "https://github.com/kartikgothwal",
+  },
+  {
+    name: "Twitter",
+    icon: twittersocial,
+    link: "https://twitter.com/KartikGothwal28",
+  },
+  {
+    name: "email",
+    icon: emailsocial,
+    link: "mailto:kartikgothwal28@gmail.com",
+  },
+];
 
-export { services,technologies, experiences,  projects };
+export { services, socials, technologies, experiences, projects };
