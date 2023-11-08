@@ -49,6 +49,7 @@ const Hero = () => {
           </motion.p>
         </motion.div>
       </div>
+
       {/* <ComputersCanvas /> */}
       <div className="absolute w-full bottom-5 mx-auto flex items-start justify-center">
         <a href="#about">
