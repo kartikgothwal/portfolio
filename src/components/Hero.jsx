@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "../styles";
-import { fadeIn, textVariant } from "../util/motion";
+import { fadeIn, slideIn, textVariant } from "../util/motion";
 import { motion } from "framer-motion";
 import ComputersCanvas from "./canvas/Computers";
 import { socials } from "../constants";
@@ -63,7 +63,7 @@ const Hero = () => {
               <br className="sm:block hidden" /> Indore, Madhya Pradesh.
             </motion.p>
             <motion.div
-              variants={fadeIn()}
+              variants={slideIn("left", "tween", 0.2, 1)}
               initial="hidden"
               animate="show"
               className="flex mt-8 flex-row flex-wrap gap-4"
