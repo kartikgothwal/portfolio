@@ -66,7 +66,7 @@ const Hero = () => {
               variants={slideIn("left", "tween", 0.2, 1)}
               initial="hidden"
               animate="show"
-              className="flex mt-8 flex-row flex-wrap gap-4"
+              className="flex mt-8 flex-row flex-wrap gap-6"
             >
               {socials.map((social) => {
                 return (
