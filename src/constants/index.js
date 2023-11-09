@@ -25,6 +25,7 @@ import {
   githubsocial,
   linkedinsocial,
   twittersocial,
+  myphoto
 } from "../assets";
 
 export const navLinks = [

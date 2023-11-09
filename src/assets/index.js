@@ -34,12 +34,13 @@ import twittersocial from "./socials/twittersocial.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import myphoto from './myphoto.png'
 export {
   emailsocial,
   githubsocial,
   linkedinsocial,
   twittersocial,
+  myphoto,
   Wave,
   logo,
   backend,

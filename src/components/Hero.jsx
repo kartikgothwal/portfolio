@@ -4,7 +4,6 @@ import { fadeIn, slideIn, textVariant } from "../util/motion";
 import { motion } from "framer-motion";
 import ComputersCanvas from "./canvas/Computers";
 import { socials } from "../constants";
-
 const SocialLinks = (props) => {
   return (
     <a href={props.link} target="_blank">
@@ -20,10 +19,11 @@ const SocialLinks = (props) => {
 const Hero = () => {
   return (
     <section className="relative w-full h-screen">
-      <div className="h-full w-full flex  justify-between flex-wrap  ">
-        <div
+      <div className="h-full w-full flex items-center justify-center flex-wrap-reverse">
+        {/* <div
           className={`${styles.paddingX} flex flex-row gap-10 max-w-7xl mx-auto absolute top-[120px] inset`}
-        >
+        > */}
+        <div className={`${styles.paddingX} flex flex-row gap-10 max-w-5xl`}>
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="h-5 rounded-full w-5 bg-[#915eff]" />
             <div className="h-40 sm:h-80 w-1 violet-gradient" />
@@ -80,13 +80,18 @@ const Hero = () => {
             </motion.div>
           </motion.div>
         </div>
-        {/* <div className="border border-white">
-          <h1>Hello</h1>
-        </div> */}
+
+        <div className="shape border-2 2xl:flex hidden border-black ">
+          <img
+            src="https://media.licdn.com/dms/image/D4D03AQGjQmGqIc68Xg/profile-displayphoto-shrink_800_800/0/1697127110812?e=1704931200&v=beta&t=ihpkstIZESelKEP6jkdtsBOF5EfRzMqVLcd_9u9OFvA"
+            alt=""
+            className=" "
+          />
+        </div>
       </div>
       {/* <ComputersCanvas /> */}
 
-      <div className="absolute w-full bottom-5 mx-auto flex items-start justify-center">
+      <div className="  flex absolute w-full bottom-5 mx-auto  items-start justify-center">
         <a href="#about">
           <div className="border-4 border-secondary flex justify-center items-center h-[64px] w-[35px] rounded-3xl">
             <motion.dev
