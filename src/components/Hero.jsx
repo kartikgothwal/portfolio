@@ -2,7 +2,7 @@ import React from "react";
 import { styles } from "../styles";
 import { fadeIn, slideIn, textVariant } from "../util/motion";
 import { motion } from "framer-motion";
-import ComputersCanvas from "./canvas/Computers"
+import ComputersCanvas from "./canvas/Computers";
 import { socials } from "../constants";
 const SocialLinks = (props) => {
   return (
