@@ -34,7 +34,8 @@ import twittersocial from "./socials/twittersocial.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import myphoto from './myphoto.png'
+import myphoto from "./myphoto.png";
+import ShopStyle from "./ShopStyles.png";
 export {
   emailsocial,
   githubsocial,
@@ -72,4 +73,5 @@ export {
   tripguide,
   WhatsAppClone,
   YoloCafe,
+  ShopStyle,
 };

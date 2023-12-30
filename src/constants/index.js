@@ -25,7 +25,8 @@ import {
   githubsocial,
   linkedinsocial,
   twittersocial,
-  myphoto
+  myphoto,
+  ShopStyle,
 } from "../assets";
 
 export const navLinks = [
@@ -170,6 +171,47 @@ const experiences = [
 
 const projects = [
   {
+    name: "Shop Styles",
+    description:
+      "An E-commerce platform with SignIn, SignUp, order processing, RazorPay integration, advanced product filtering and sorting, wishlists, address management, JWT token.",
+    tags: [
+      {
+        name: "MERN",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux-ToolKit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "RazorPay",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MaterialUI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT & Refresh token",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Axios",
+        color: "pink-text-gradient",
+      },
+    ],
+
+    image: ShopStyle,
+    source_code_link: {
+      github: "https://github.com/kartikgothwal/shopStyle-Ecommerce-Store",
+      link: "https://shop-style-ecommerce-store.vercel.app/",
+    },
+  },
+  {
     name: "Car Rental Store",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
@@ -194,6 +236,10 @@ const projects = [
         name: "Bcrypt.js ",
         color: "green-text-gradient",
       },
+      {
+        name: "Axios",
+        color: "pink-text-gradient",
+      },
     ],
     image: carrent,
     source_code_link: {
@@ -213,6 +259,14 @@ const projects = [
       {
         name: "Firebase",
         color: "green-text-gradient",
+      },
+      {
+        name: "Firebase CloudStorage",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "googleAuth",
+        color: "pink-text-gradient",
       },
       {
         name: "TailwindCSS",
