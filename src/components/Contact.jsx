@@ -101,7 +101,7 @@ const Contact = () => {
               className="bg-tertiary text-white rounded-lg py-4 px-6 placeholder:text-secondary outline-none border-none font-medium "
             />
           </label>
-          <button className="sendBtn shadow-primary bg-tertiary">
+          <button className="sendBtn shadow-primary bg-tertiary ">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg

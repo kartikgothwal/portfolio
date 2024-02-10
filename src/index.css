@@ -127,7 +127,7 @@
 }
 
 .sendBtn {
-  @apply text-xl text-[white] flex items-center overflow-hidden transition-all duration-[0.2s] cursor-pointer pl-[0.8em] px-[1em] py-[0.7em] rounded-2xl border-[none] active:scale-95;
+  @apply w-[30%] text-xl text-[white] flex items-center overflow-hidden transition-all duration-[0.2s] cursor-pointer pl-[0.8em] px-[1em] py-[0.7em] rounded-2xl border-[none] active:scale-95;
   font-family: inherit;
   /* background: royalblue; */
 }
