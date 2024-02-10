@@ -81,7 +81,7 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="border-animation shape border-2 2xl:flex hidden border-black ">
+        <div className="  shape border-2 2xl:flex hidden border-black ">
           <img
             src={mypic}
             alt=""

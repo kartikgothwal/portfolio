@@ -126,76 +126,61 @@
   transform: translateZ(0);
 }
 
-.sendBtn {
-  @apply w-[30%] text-xl text-[white] flex items-center overflow-hidden transition-all duration-[0.2s] cursor-pointer pl-[0.8em] px-[1em] py-[0.7em] rounded-2xl border-[none] active:scale-95;
-  font-family: inherit;
-  /* background: royalblue; */
-}
-.sendBtn span {
-  @apply block transition-all duration-[0.3s] ease-[ease-in-out] ml-[0.3em];
-}
-.sendBtn svg {
-  @apply block origin-[center_center] transition-transform duration-[0.3s] ease-[ease-in-out];
-}
-.sendBtn:hover .svg-wrapper {
-  @apply animate-[fly-1_0.6s_ease-in-out_infinite_alternate];
-}
-.sendBtn:hover svg {
-  @apply translate-x-[10px] rotate-45 scale-110;
-}
-.sendBtn:hover span {
-  @apply translate-x-[15px];
-}
-@keyframes fly-1 {
-  from {
-    @apply translate-y-[0.1em];
-  }
-  to {
-    @apply translate-y-[-0.1em];
-  }
+.spinner {
+  width: 15px;
+  height: 15px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
 }
 
-.border-animation {
-  @apply w-[60vmin] h-[50vmin] grid place-content-center text-[white] bg-[center_center] animate-[bg-spin_3s_linear_infinite] rounded-[2em] border-[solid] border-transparent;
-  text-shadow: 0 1px 0 #000;
-  --border-angle: 0turn;
- 
-  --main-bg: conic-gradient(
-    from var(--border-angle),
-    #213,
-    #112 5%,
-    #112 60%,
-    #213 95%
-  );
-  --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 25%,
-    #08f,
-    #f03 99%,
-    transparent
-  );
-  background: 
- var(
-    --main-bg
-      )
-      padding-box,
-    // border-box extends this background to the border space
-      var(--gradient-border) border-box,
-    // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
-      var(--main-bg) border-box;
+.spinner > div {
+  background-color: rgba(0, 77, 255, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #004dff;
 }
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-10px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(10px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
   }
-}
-.border-animation:hover {
-  animation-play-state: paused;
-}
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
 }
 
 @keyframes mulShdSpin {
