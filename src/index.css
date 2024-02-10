@@ -126,6 +126,78 @@
   transform: translateZ(0);
 }
 
+.sendBtn {
+  @apply text-xl text-[white] flex items-center overflow-hidden transition-all duration-[0.2s] cursor-pointer pl-[0.8em] px-[1em] py-[0.7em] rounded-2xl border-[none] active:scale-95;
+  font-family: inherit;
+  /* background: royalblue; */
+}
+.sendBtn span {
+  @apply block transition-all duration-[0.3s] ease-[ease-in-out] ml-[0.3em];
+}
+.sendBtn svg {
+  @apply block origin-[center_center] transition-transform duration-[0.3s] ease-[ease-in-out];
+}
+.sendBtn:hover .svg-wrapper {
+  @apply animate-[fly-1_0.6s_ease-in-out_infinite_alternate];
+}
+.sendBtn:hover svg {
+  @apply translate-x-[10px] rotate-45 scale-110;
+}
+.sendBtn:hover span {
+  @apply translate-x-[15px];
+}
+@keyframes fly-1 {
+  from {
+    @apply translate-y-[0.1em];
+  }
+  to {
+    @apply translate-y-[-0.1em];
+  }
+}
+
+.border-animation {
+  @apply w-[60vmin] h-[50vmin] grid place-content-center text-[white] bg-[center_center] animate-[bg-spin_3s_linear_infinite] rounded-[2em] border-[solid] border-transparent;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+ 
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    #112 5%,
+    #112 60%,
+    #213 95%
+  );
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #08f,
+    #f03 99%,
+    transparent
+  );
+  background: 
+ var(
+    --main-bg
+      )
+      padding-box,
+    // border-box extends this background to the border space
+      var(--gradient-border) border-box,
+    // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+      var(--main-bg) border-box;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.border-animation:hover {
+  animation-play-state: paused;
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

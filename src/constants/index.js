@@ -26,6 +26,7 @@ import {
   linkedinsocial,
   twittersocial,
   myphoto,
+  typescript,
   ShopStyle,
 } from "../assets";
 
@@ -71,6 +72,10 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "React JS",

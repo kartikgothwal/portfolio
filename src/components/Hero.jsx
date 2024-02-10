@@ -2,7 +2,7 @@ import React from "react";
 import { styles } from "../styles";
 import { fadeIn, slideIn, textVariant } from "../util/motion";
 import { motion } from "framer-motion";
-import ComputersCanvas from "./canvas/Computers";
+ import { mypic } from "../assets";
 import { socials } from "../constants";
 const SocialLinks = (props) => {
   return (
@@ -47,7 +47,7 @@ const Hero = () => {
             <h3
               className={`${styles.heroSubText} text-secondary font-normal text-sm md:text-xl  text-gray-850 leading-[30px]`}
             >
-              <span>JavaScript /</span> <span> MERN / </span>
+              <span>TypeScript</span><span> / JavaScript /</span> <span> MERN / </span>
               <span>Redux / RTK Query /</span>
               <span>Tailwind / </span>
               <span>Firebase /</span>
@@ -81,11 +81,11 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="shape border-2 2xl:flex hidden border-black ">
+        <div className="border-animation shape border-2 2xl:flex hidden border-black ">
           <img
-            src="https://media.licdn.com/dms/image/D4D03AQGjQmGqIc68Xg/profile-displayphoto-shrink_800_800/0/1697127110812?e=1704931200&v=beta&t=ihpkstIZESelKEP6jkdtsBOF5EfRzMqVLcd_9u9OFvA"
+            src={mypic}
             alt=""
-            className=" "
+            className=""
           />
         </div>
       </div>

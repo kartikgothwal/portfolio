@@ -36,6 +36,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import myphoto from "./myphoto.png";
 import ShopStyle from "./ShopStyles.png";
+import mypic from './myphoto/mypic.jpg'
+import typescript from './tech/typescript.png'
 export {
   emailsocial,
   githubsocial,
@@ -49,6 +51,7 @@ export {
   mobile,
   web,
   github,
+  typescript,
   menu,
   close,
   css,
@@ -74,4 +77,5 @@ export {
   WhatsAppClone,
   YoloCafe,
   ShopStyle,
+  mypic
 };
