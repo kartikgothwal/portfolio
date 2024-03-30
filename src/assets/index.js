@@ -38,6 +38,7 @@ import myphoto from "./myphoto.png";
 import ShopStyle from "./ShopStyles.png";
 import mypic from './myphoto/mypic.jpg'
 import typescript from './tech/typescript.png'
+import graphql from "./tech/graphql.png"
 export {
   emailsocial,
   githubsocial,
@@ -45,6 +46,7 @@ export {
   twittersocial,
   myphoto,
   Wave,
+  graphql,
   logo,
   backend,
   creator,

@@ -44,19 +44,16 @@ const About = () => {
           Developer.
         </h1>
       </motion.div>
-      <motion.p
+      <motion
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        As a Full Stack Developer, I possess an impressive arsenal of skills in
-        React.js,Redux Tailwind CSS, JavaScript, Node.js, Express.js, Firebase,
-        HTML, CSS, Styled Component and Material UI. I have developed multiple
-        projects which helped me to enhance my skills. Yes, having your strong
+        As a Full Stack Developer, I possess an impressive arsenal of skills in NextJS, MERN Stack, TypeScript, GraphQL, Redux, Tailwind CSS, JavaScript, Node.js, , Firebase, HTML, CSS, Styled Component and Material UI. I have developed multiple projects which helped me to enhance my skills. Yes, having your strong
         base really helps and hence I am open to adapting to whichever framework
         is required. I believe Project Based Learning is the best approach to
         learn anything. Hence, I've got projects in all the different
         technologies that I've learned over time.
-      </motion.p>
+      </motion>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"

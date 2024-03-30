@@ -25,11 +25,54 @@ import {
   githubsocial,
   linkedinsocial,
   twittersocial,
-  myphoto,
   typescript,
   ShopStyle,
+  graphql,
 } from "../assets";
 
+const heroSubSkills = [
+  {
+    id: "NextJs",
+    title: "NextJs",
+  },
+  {
+    id: "MERN Stack",
+    title: "MERN Stack",
+  },
+  {
+    id: "TypeScript",
+    title: "TypeScript",
+  },
+  {
+    id: "JavaScript",
+    title: "JavaScript ",
+  },
+
+  {
+    id: "Redux",
+    title: "Redux",
+  },
+  {
+    id: "RTK Query",
+    title: "RTK Query",
+  },
+  {
+    id: "GraphQL",
+    title: "GraphQL",
+  },
+  {
+    id: "Tailwind",
+    title: "Tailwind",
+  },
+  {
+    id: "Firebase",
+    title: "Firebase",
+  },
+  {
+    id: "Styled-Component",
+    title: "Styled-Component",
+  },
+];
 export const navLinks = [
   {
     id: "about",
@@ -51,7 +94,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "NextJS Developer",
     icon: web,
   },
   {
@@ -84,6 +127,10 @@ const technologies = [
   {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
   },
   {
     name: "Node JS",
@@ -219,7 +266,7 @@ const projects = [
   {
     name: "Car Rental Store",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation.",
     tags: [
       {
         name: "MERN",
@@ -342,4 +389,11 @@ const socials = [
   },
 ];
 
-export { services, socials, technologies, experiences, projects };
+export {
+  services,
+  socials,
+  technologies,
+  experiences,
+  projects,
+  heroSubSkills,
+};

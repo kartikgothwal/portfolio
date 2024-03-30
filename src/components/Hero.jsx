@@ -2,8 +2,8 @@ import React from "react";
 import { styles } from "../styles";
 import { fadeIn, slideIn, textVariant } from "../util/motion";
 import { motion } from "framer-motion";
- import { mypic } from "../assets";
-import { socials } from "../constants";
+import { mypic } from "../assets";
+import { heroSubSkills, socials } from "../constants";
 const SocialLinks = (props) => {
   return (
     <a href={props.link} target="_blank">
@@ -20,9 +20,6 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen">
       <div className="h-full w-full flex items-center justify-center flex-wrap-reverse">
-        {/* <div
-          className={`${styles.paddingX} flex flex-row gap-10 max-w-7xl mx-auto absolute top-[120px] inset`}
-        > */}
         <div className={`${styles.paddingX} flex flex-row gap-10 max-w-5xl`}>
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="h-5 rounded-full w-5 bg-[#915eff]" />
@@ -47,11 +44,14 @@ const Hero = () => {
             <h3
               className={`${styles.heroSubText} text-secondary font-normal text-sm md:text-xl  text-gray-850 leading-[30px]`}
             >
-              <span>TypeScript</span><span> / JavaScript /</span> <span> MERN / </span>
-              <span>Redux / RTK Query /</span>
-              <span>Tailwind / </span>
-              <span>Firebase /</span>
-              <span> Styled-Component </span>
+              {heroSubSkills.map((skills, index) => {
+                return (
+                  <span key={skills.id}>
+                    {" "}
+                    {index == 0 ? skills.title : " / " + skills.title}
+                  </span>
+                );
+              })}
             </h3>
             <motion.p
               variants={fadeIn()}
@@ -71,6 +71,7 @@ const Hero = () => {
               {socials.map((social) => {
                 return (
                   <SocialLinks
+                    key={social.name}
                     link={social.link}
                     name={social.name}
                     icon={social.icon}
@@ -82,14 +83,9 @@ const Hero = () => {
         </div>
 
         <div className="  shape border-2 2xl:flex hidden border-black ">
-          <img
-            src={mypic}
-            alt=""
-            className=""
-          />
+          <img src={mypic} alt="" className="" />
         </div>
       </div>
-      {/* <ComputersCanvas /> */}
 
       <div className="  flex absolute w-full bottom-5 mx-auto  items-start justify-center">
         <a href="#about">
