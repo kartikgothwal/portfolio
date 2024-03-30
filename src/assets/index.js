@@ -39,7 +39,9 @@ import ShopStyle from "./ShopStyles.png";
 import mypic from './myphoto/mypic.jpg'
 import typescript from './tech/typescript.png'
 import graphql from "./tech/graphql.png"
+import nextjs from "./tech/nextjs.png"
 export {
+  nextjs,
   emailsocial,
   githubsocial,
   linkedinsocial,

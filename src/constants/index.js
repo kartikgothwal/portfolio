@@ -28,6 +28,7 @@ import {
   typescript,
   ShopStyle,
   graphql,
+  nextjs,
 } from "../assets";
 
 const heroSubSkills = [
@@ -113,16 +114,20 @@ const services = [
 
 const technologies = [
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Redux Toolkit",
