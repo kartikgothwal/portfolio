@@ -9,6 +9,7 @@ import { useFormik } from "formik";
 import { contactFormValidaton } from "../util/schemas";
 import { toast } from "react-toastify";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Contact = () => {
   const formRef = useRef();
   const initialValues = {
@@ -47,26 +48,39 @@ const Contact = () => {
           )
           .then(() => {
             SetLoading(false);
+
             toast.success(
               "Thank you. I will get back to you as soon as possible",
               {
-                autoClose: 5000,
                 position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
                 theme: "dark",
+                transition: "Bounce",
               }
             );
             action.resetForm();
           })
           .catch((error) => {
-            console.log("🚀 ~ handleSubmit ~ error:", error);
+            console.error("🚀 ~ handleSubmit ~ error:", error);
             SetLoading(false);
             toast.error(
               "Something went wrong, Please try sending email on this email " +
                 import.meta.env.VITE_MY_EMAIL,
               {
-                autoClose: 5000,
                 position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
                 theme: "dark",
+                transition: "Bounce",
               }
             );
           });

@@ -6,12 +6,19 @@ import { projects } from "../constants";
 import { textVariant, fadeIn } from "../util/motion";
 import SectionWrapper from "./hoc";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const ProjectCard = ({
+  // eslint-disable-next-line react/prop-types
   index,
+  // eslint-disable-next-line react/prop-types
   name,
+  // eslint-disable-next-line react/prop-types
   description,
+  // eslint-disable-next-line react/prop-types
   tags,
+  // eslint-disable-next-line react/prop-types
   image,
+  // eslint-disable-next-line react/prop-types
   source_code_link,
 }) => {
   return (
@@ -69,7 +76,7 @@ const ProjectCard = ({
           </div>
         </div>
         <div className="mt-5">
-          <a href={source_code_link.link} target="_blank">
+          <a href={source_code_link.link} target="_blank" rel="noreferrer">
             <h3 className="hover:underline font-bold text-[24px] cursor-pointer text-white">
               {name}
             </h3>
@@ -77,11 +84,11 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2 whitespace-nowrap">
-          {tags?.map((tag) => {
+          {tags.map((tag) => {
             return (
               <p
                 key={tag.name}
-                className={`flex text-blue-300  flex-wrap gap-2 text-[14px] `}
+                className={`flex  flex-wrap gap-2 text-[14px] text-white`}
               >
                 {tag.name}
               </p>
@@ -92,10 +99,11 @@ const ProjectCard = ({
     </motion.div>
   );
 };
+// eslint-disable-next-line react-refresh/only-export-components
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id="project">
         <p className={styles.sectionSubText}>My Work</p>
         <h1
           className={`${styles.sectionHeadText} hover:text-secondary transition-colors duration-150 ease-in cursor-pointer`}
@@ -127,4 +135,5 @@ const Works = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(Works, "projects");

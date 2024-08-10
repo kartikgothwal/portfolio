@@ -20,6 +20,9 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen">
       <div className="h-full w-full flex items-center justify-center flex-wrap-reverse">
+        {/* <div
+          className={`${styles.paddingX} flex flex-row gap-10 max-w-7xl mx-auto absolute top-[120px] inset`}
+        > */}
         <div className={`${styles.paddingX} flex flex-row gap-10 max-w-5xl`}>
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="h-5 rounded-full w-5 bg-[#915eff]" />
@@ -71,7 +74,6 @@ const Hero = () => {
               {socials.map((social) => {
                 return (
                   <SocialLinks
-                    key={social.name}
                     link={social.link}
                     name={social.name}
                     icon={social.icon}
@@ -86,9 +88,10 @@ const Hero = () => {
           <img src={mypic} alt="" className="" />
         </div>
       </div>
+      {/* <ComputersCanvas /> */}
 
       <div className="  flex absolute w-full bottom-5 mx-auto  items-start justify-center">
-        <a href="#about">
+        <a href="#project">
           <div className="border-4 border-secondary flex justify-center items-center h-[64px] w-[35px] rounded-3xl">
             <motion.dev
               animate={{ y: [0, 24, 0] }}

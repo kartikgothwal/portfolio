@@ -36,11 +36,14 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import myphoto from "./myphoto.png";
 import ShopStyle from "./ShopStyles.png";
-import mypic from './myphoto/mypic.jpg'
-import typescript from './tech/typescript.png'
-import graphql from "./tech/graphql.png"
-import nextjs from "./tech/nextjs.png"
+import mypic from "./myphoto/mypic.jpg";
+import typescript from "./tech/typescript.png";
+import graphql from "./tech/graphql.png";
+import nextjs from "./tech/nextjs.png";
+import genius from "./work/genius.png";
+import neumoney from "./work/neumoney.png";
 export {
+  graphql,
   nextjs,
   emailsocial,
   githubsocial,
@@ -48,7 +51,6 @@ export {
   twittersocial,
   myphoto,
   Wave,
-  graphql,
   logo,
   backend,
   creator,
@@ -81,5 +83,7 @@ export {
   WhatsAppClone,
   YoloCafe,
   ShopStyle,
-  mypic
+  mypic,
+  genius,
+  neumoney,
 };

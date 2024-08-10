@@ -10,9 +10,9 @@ import {
   Hero,
   StarsCanvas,
 } from "./components";
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,10 +21,10 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About />
-        {/* <Experience /> */}
-        <Tech />
         <Works />
+        <Experience />
+        <Tech />
+        <About />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

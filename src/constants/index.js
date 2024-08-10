@@ -29,51 +29,10 @@ import {
   ShopStyle,
   graphql,
   nextjs,
+  neumoney,
+  genius,
 } from "../assets";
 
-const heroSubSkills = [
-  {
-    id: "NextJs",
-    title: "NextJs",
-  },
-  {
-    id: "MERN Stack",
-    title: "MERN Stack",
-  },
-  {
-    id: "TypeScript",
-    title: "TypeScript",
-  },
-  {
-    id: "JavaScript",
-    title: "JavaScript ",
-  },
-
-  {
-    id: "Redux",
-    title: "Redux",
-  },
-  {
-    id: "RTK Query",
-    title: "RTK Query",
-  },
-  {
-    id: "GraphQL",
-    title: "GraphQL",
-  },
-  {
-    id: "Tailwind",
-    title: "Tailwind",
-  },
-  {
-    id: "Firebase",
-    title: "Firebase",
-  },
-  {
-    id: "Styled-Component",
-    title: "Styled-Component",
-  },
-];
 export const navLinks = [
   {
     id: "about",
@@ -95,7 +54,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "NextJS Developer",
+    title: "Web Developer",
     icon: web,
   },
   {
@@ -170,63 +129,152 @@ const technologies = [
     icon: StyledComponents,
   },
 ];
+const heroSubSkills = [
+  {
+    id: "NextJs",
+    title: "NextJs",
+  },
+  {
+    id: "MERN Stack",
+    title: "MERN Stack",
+  },
+  {
+    id: "TypeScript",
+    title: "TypeScript",
+  },
+  {
+    id: "JavaScript",
+    title: "JavaScript ",
+  },
 
+  {
+    id: "Redux",
+    title: "Redux",
+  },
+  {
+    id: "RTK Query",
+    title: "RTK Query",
+  },
+  {
+    id: "GraphQL",
+    title: "GraphQL",
+  },
+  {
+    id: "Tailwind",
+    title: "Tailwind",
+  },
+  {
+    id: "Firebase",
+    title: "Firebase",
+  },
+  {
+    id: "Styled-Component",
+    title: "Styled-Component",
+  },
+];
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Full Stack Developer",
+    company_name: "Brain Inventory",
     icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Dec 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      `Developed and maintained the company website using Next.js, AWS, and S3, ensuring optimal performance and enhanced UI design.
+      Collaborated on e-commerce, accounting, and banking projects, building secure, scalable applications tailored to client needs.
+      Optimized cloud infrastructure for high-traffic applications, focusing on reliability and efficiency.
+      Contributed to diverse projects, refining full stack development skills across various domains.`,
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "MERN Developer- Internship",
+    company_name: "Oasis InfoByte",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2023 – Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      `Developed a fully functional application using the MERN stack with seamless integration between the front-end and back-end components and used modernJS frameworks with strong grasp of DOM structure and state management libraries.
+      Embraced User-Centric Design Principles, Resulting In 200 times Improvement In UI/UX, Usability, And Accessibility.
+      Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.`,
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "MERN Developer- Internship",
+    company_name: "TXON Software Solutions",
+    icon: tesla,
+    iconBg: "#383E56",
+    date: "Feb 2023 – April 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      `Created And Designed 10+ Web Pages For Live Projects, Adeptly Applying A Wide  Range Of Technologies, Including CSS, HTML, JavaScript, MERN, Redux, And Tailwind CSS.
+      Implemented global state management using Redux toolkit, fetched data in real-time from APIs where latency was less than 0.01ms. Successfully Resolved Challenges, Resulting In The Completion Of 2 Major Projects.
+      Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests.`,
     ],
   },
 ];
 
 const projects = [
+  {
+    name: "NeuMoney",
+    description:
+      "Neumoney is a banking system for college students. I developed the admin panel, handling user and application management, ensuring secure, streamlined operations for building credit system.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Query",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS Code-Commit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React-BootStrap",
+        color: "pink-text-gradient",
+      },
+    ],
+
+    image: neumoney,
+    source_code_link: {
+      // github: "https://github.com/kartikgothwal/shopStyle-Ecommerce-Store",
+      link: "https://us.neumoney.app/",
+    },
+  },
+  {
+    name: "GeniusTV",
+    description:
+      "The GeniusTV is an e-commerce site designed for the German market. In this, I worked on the the admin panel, product listing and managing the data via commercetools and contentfull",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GraphQl",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CommerceTools",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ContentFull",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React-Bootstrap",
+        color: "blue-text-gradient",
+      },
+    ],
+
+    image: genius,
+    source_code_link: {
+      // github: "https://github.com/kartikgothwal/shopStyle-Ecommerce-Store",
+      link: "https://www.genius.tv/",
+    },
+  },
   {
     name: "Shop Styles",
     description:
@@ -341,35 +389,35 @@ const projects = [
       link: "https://whatsapp-clone-97e3c.firebaseapp.com/",
     },
   },
-  {
-    name: "Yolo Cafe",
-    description:
-      "This is a online web application for a local cafe to gow their bussiness and help consumers to place orders and get it delivered to their home.",
-    tags: [
-      {
-        name: "MERN",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Styled-Components",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "TailwindCSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MaterialUI",
-        color: "pink-text-gradient",
-      },
-    ],
+  // {
+  //   name: "Yolo Cafe",
+  //   description:
+  //     "This is a online web application for a local cafe to gow their bussiness and help consumers to place orders and get it delivered to their home.",
+  //   tags: [
+  //     {
+  //       name: "MERN",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Styled-Components",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "TailwindCSS",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "MaterialUI",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
 
-    image: YoloCafe,
-    source_code_link: {
-      github: "https://github.com/kartikgothwal/Car-Rental",
-      link: "https://car-rental-five-indol.vercel.app/",
-    },
-  },
+  //   image: YoloCafe,
+  //   source_code_link: {
+  //     github: "https://github.com/kartikgothwal/Car-Rental",
+  //     link: "https://car-rental-five-indol.vercel.app/",
+  //   },
+  // },
 ];
 const socials = [
   {
