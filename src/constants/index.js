@@ -238,7 +238,7 @@ const projects = [
 
     image: neumoney,
     source_code_link: {
-      // github: "https://github.com/kartikgothwal/shopStyle-Ecommerce-Store",
+      github: null,
       link: "https://us.neumoney.app/",
     },
   },
@@ -271,7 +271,7 @@ const projects = [
 
     image: genius,
     source_code_link: {
-      // github: "https://github.com/kartikgothwal/shopStyle-Ecommerce-Store",
+      github: null,
       link: "https://www.genius.tv/",
     },
   },
