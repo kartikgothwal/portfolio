@@ -10,7 +10,7 @@ import {
   Hero,
   StarsCanvas,
 } from "./components";
-import { ToastContainer, toast } from "react-toastify";
+ import { Toaster } from 'react-hot-toast';
 
 import "react-toastify/dist/ReactToastify.css";
 const App = () => {
@@ -30,7 +30,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
-      <ToastContainer />
+      <Toaster />
     </BrowserRouter>
   );
 };

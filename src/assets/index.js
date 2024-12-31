@@ -42,7 +42,10 @@ import graphql from "./tech/graphql.png";
 import nextjs from "./tech/nextjs.png";
 import genius from "./work/genius.png";
 import neumoney from "./work/neumoney.png";
-export {
+import brainInventory from "./work/brain_inventory.png"
+import AWS from './tech/AWS.jpg'
+ export {
+  AWS,
   graphql,
   nextjs,
   emailsocial,
@@ -86,4 +89,5 @@ export {
   mypic,
   genius,
   neumoney,
+  brainInventory
 };

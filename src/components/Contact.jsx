@@ -7,7 +7,8 @@ import sectionWrapper from "./hoc";
 import { slideIn } from "../util/motion";
 import { useFormik } from "formik";
 import { contactFormValidaton } from "../util/schemas";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Contact = () => {
@@ -17,7 +18,7 @@ const Contact = () => {
     email: "",
     message: "",
   };
-
+ 
   const [loading, SetLoading] = useState(false);
   // const handleChange = (e) => {
   //   setForm((prevData) => {
@@ -48,21 +49,21 @@ const Contact = () => {
           )
           .then(() => {
             SetLoading(false);
+            toast.success('Thank you. I will get back to you as soon as possible', {
+              duration: 4000,
+              position: 'top-center', 
+              style: {
+                border: '1px solid #713200',
+                padding: '16px',
+                color: '#713200',
+              },
+              iconTheme: {
+                primary: '#713200',
+                secondary: '#FFFAEE',
+              },
+              removeDelay: 0,
 
-            toast.success(
-              "Thank you. I will get back to you as soon as possible",
-              {
-                position: "top-center",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-                transition: "Bounce",
-              }
-            );
+            });
             action.resetForm();
           })
           .catch((error) => {
@@ -114,7 +115,7 @@ const Contact = () => {
               className="bg-tertiary text-white rounded-lg py-4 px-6 placeholder:text-secondary outline-none border-none font-medium "
             />
             {errors.name && touched.name ? (
-              <span className="text-secondary mt-1 text-[10px]">
+              <span className="text-red-500 mt-1 text-[12px]">
                 {errors.name}
               </span>
             ) : null}
@@ -133,7 +134,7 @@ const Contact = () => {
               className="bg-tertiary text-white rounded-lg py-4 px-6 placeholder:text-secondary outline-none border-none font-medium "
             />
             {errors.email && touched.email ? (
-              <span className="text-secondary mt-1 text-[10px]">
+              <span className="text-red-500 mt-1 text-[12px]">
                 {errors.email}
               </span>
             ) : null}
@@ -152,7 +153,7 @@ const Contact = () => {
               className="bg-tertiary text-white rounded-lg py-4 px-6 placeholder:text-secondary outline-none border-none font-medium "
             />
             {errors.message && touched.message ? (
-              <span className="text-secondary mt-1 text-[10px]">
+              <span className="text-red-500 mt-1 text-[12px]">
                 {errors.message}
               </span>
             ) : null}
@@ -165,7 +166,7 @@ const Contact = () => {
             {loading ? (
               <div className="flex justify-center align-center gap-3">
                 <span className="text-secondary"> Sending...</span>{" "}
-                <div class="spinner mt-1">
+                <div className="spinner mt-1">
                   <div></div>
                   <div></div>
                   <div></div>
@@ -190,4 +191,5 @@ const Contact = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default sectionWrapper(Contact, "contact");

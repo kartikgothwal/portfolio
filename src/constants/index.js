@@ -31,6 +31,9 @@ import {
   nextjs,
   neumoney,
   genius,
+  brainInventory,
+  AWS,
+  docker,
 } from "../assets";
 
 export const navLinks = [
@@ -109,6 +112,14 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "AWS",
+    icon: AWS,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -124,10 +135,7 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "StyledComponents",
-    icon: StyledComponents,
-  },
+  
 ];
 const heroSubSkills = [
   {
@@ -146,7 +154,14 @@ const heroSubSkills = [
     id: "JavaScript",
     title: "JavaScript ",
   },
-
+  {
+    id: "AWS",
+    title: "AWS",
+  },
+  {
+    id: "Docker",
+    title: "Docker",
+  },
   {
     id: "Redux",
     title: "Redux",
@@ -166,10 +181,6 @@ const heroSubSkills = [
   {
     id: "Firebase",
     title: "Firebase",
-  },
-  {
-    id: "Styled-Component",
-    title: "Styled-Component",
   },
 ];
 const experiences = [
@@ -240,6 +251,47 @@ const projects = [
     source_code_link: {
       github: null,
       link: "https://us.neumoney.app/",
+    },
+  },
+  {
+    name: "Brain Inventory",
+    description: `Brain Inventory’s website boasts 50+ fully mobile-responsive, SEO-friendly pages. It ranks on Google’s rankings, with a
+WordPress blog seamlessly integrated into a Next.js application. With AWS deployment.`,
+    tags: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "S3 Bucket",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS Amplify",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "EC2",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Route53",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Wordpress",
+        color: "green-text-gradient",
+      },
+    ],
+
+    image: brainInventory,
+    source_code_link: {
+      github: null,
+      link: "https://braininventory.in/",
     },
   },
   {
