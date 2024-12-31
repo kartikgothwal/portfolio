@@ -11,8 +11,6 @@ import {
   StarsCanvas,
 } from "./components";
  import { Toaster } from 'react-hot-toast';
-
-import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <BrowserRouter>

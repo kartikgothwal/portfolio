@@ -7,8 +7,7 @@ import sectionWrapper from "./hoc";
 import { slideIn } from "../util/motion";
 import { useFormik } from "formik";
 import { contactFormValidaton } from "../util/schemas";
-// import { toast } from "react-toastify";
-import toast from "react-hot-toast";
+ import toast from "react-hot-toast";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Contact = () => {
