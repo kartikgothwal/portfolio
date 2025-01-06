@@ -34,6 +34,8 @@ import {
   brainInventory,
   AWS,
   docker,
+  AIVenture,
+  AITools,
 } from "../assets";
 
 export const navLinks = [
@@ -135,7 +137,6 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  
 ];
 const heroSubSkills = [
   {
@@ -234,6 +235,10 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
         name: "React Query",
         color: "green-text-gradient",
       },
@@ -260,6 +265,10 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
     tags: [
       {
         name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
         color: "blue-text-gradient",
       },
       {
@@ -304,6 +313,10 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
         color: "blue-text-gradient",
       },
       {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
         name: "GraphQl",
         color: "green-text-gradient",
       },
@@ -328,12 +341,70 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
     },
   },
   {
+    name: "The AI Venture",
+    description:
+      "The GeniusTV is an e-commerce site designed for the German market. In this, I worked on the the admin panel, product listing and managing the data via commercetools and contentfull",
+    tags: [
+      {
+        name: "MERN",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Recoil",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CI/CD",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "EC2",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS Lambda",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Route53",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "CloudWatch",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+    ],
+
+    image: AITools,
+    source_code_link: {
+      github: null,
+      link: "https://www.theaiventure.com/",
+    },
+  },
+
+  {
     name: "Shop Styles",
     description:
       "An E-commerce platform with SignIn, SignUp, order processing, RazorPay integration, advanced product filtering and sorting, wishlists, address management, JWT token.",
     tags: [
       {
         name: "MERN",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
         color: "blue-text-gradient",
       },
       {
@@ -375,6 +446,10 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
     tags: [
       {
         name: "MERN",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
         color: "blue-text-gradient",
       },
       {
