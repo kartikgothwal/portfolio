@@ -343,7 +343,7 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
   {
     name: "The AI Venture",
     description:
-      "The GeniusTV is an e-commerce site designed for the German market. In this, I worked on the the admin panel, product listing and managing the data via commercetools and contentfull",
+      "The AI Venture Project showcased AI tools, shared AI news, published blogs, and connected users with innovative AI solutions, fostering learning and collaboration in the AI space.",
     tags: [
       {
         name: "MERN",
