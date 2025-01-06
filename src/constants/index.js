@@ -34,7 +34,6 @@ import {
   brainInventory,
   AWS,
   docker,
-  AIVenture,
   AITools,
 } from "../assets";
 
