@@ -35,6 +35,8 @@ import {
   AWS,
   docker,
   AITools,
+  NotesApp,
+  ReactQuery,
 } from "../assets";
 
 export const navLinks = [
@@ -119,6 +121,10 @@ const technologies = [
   {
     name: "Docker",
     icon: docker,
+  },
+  {
+    name: "React Query",
+    icon: ReactQuery,
   },
   {
     name: "Tailwind CSS",
@@ -342,7 +348,7 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
   {
     name: "The AI Venture",
     description:
-      "The AI Venture Project showcased AI tools, shared AI news, published blogs, and connected users with innovative AI solutions, fostering learning and collaboration in the AI space.",
+      "The AI Venture Project showcased AI tools, shared AI news, published blogs, and connected users with innovative AI solutions, fostering learning and collaboration with AI.",
     tags: [
       {
         name: "MERN",
@@ -424,10 +430,6 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
       },
       {
         name: "JWT & Refresh token",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Axios",
         color: "pink-text-gradient",
       },
     ],
@@ -513,6 +515,55 @@ WordPress blog seamlessly integrated into a Next.js application. With AWS deploy
     source_code_link: {
       github: "https://github.com/kartikgothwal/WhatsApp-Clone",
       link: "https://whatsapp-clone-97e3c.firebaseapp.com/",
+    },
+  },
+  {
+    name: "Keep Notes",
+    description:
+      "Keep Notes is a simple and efficient note-taking app. Quickly jot down reminders, create to-do lists, and brainstorm ideas with ease.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Query",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ExpressJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Zod",
+        color: "pink-text-gradient",
+      },
+    ],
+
+    image: NotesApp,
+    source_code_link: {
+      github: "https://github.com/kartikgothwal/notes-application",
+      link: "https://notes-application-silk.vercel.app/",
     },
   },
   // {

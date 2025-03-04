@@ -73,6 +73,7 @@ const Hero = () => {
             >
               {socials.map((social) => {
                 return (
+                  // eslint-disable-next-line react/jsx-key
                   <SocialLinks
                     link={social.link}
                     name={social.name}

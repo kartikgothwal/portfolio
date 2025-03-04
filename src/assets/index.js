@@ -45,7 +45,11 @@ import neumoney from "./work/neumoney.png";
 import brainInventory from "./work/brain_inventory.png";
 import AITools from "./work/AITools.png";
 import AWS from "./tech/AWS.jpg";
+import NotesApp from "./work/NotesApp.png";
+import ReactQuery from "./tech/reactquery.png";
 export {
+  ReactQuery,
+  NotesApp,
   AITools,
   AWS,
   graphql,
