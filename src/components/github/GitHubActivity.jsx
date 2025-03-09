@@ -55,7 +55,7 @@ const GitHubActivity = () => {
         `https://api.github.com/users/kartikgothwal/repos`,
         {
           headers: {
-            Authorization: `token ${GITHUB_PAT_TOKEN}`,
+            Authorization: `${GITHUB_PAT_TOKEN}`,
             Accept: "application/vnd.github.v3+json",
           },
         }
@@ -78,7 +78,7 @@ const GitHubActivity = () => {
       setError(null);
       const res = await axios.get(`${BACKEND_URL}/github/${selectedRepo}`, {
         headers: {
-          Authorization: `token ${GITHUB_PAT_TOKEN}`,
+          Authorization: `${GITHUB_PAT_TOKEN}`,
           Accept: "application/vnd.github.v3+json",
         },
       });
@@ -101,7 +101,7 @@ const GitHubActivity = () => {
       setError(null);
       const res = await axios.get(`${BACKEND_URL}/github`, {
         headers: {
-          Authorization: `token ${GITHUB_PAT_TOKEN}`,
+          Authorization: `${GITHUB_PAT_TOKEN}`,
           Accept: "application/vnd.github.v3+json",
         },
       });
