@@ -11,8 +11,9 @@ import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
 import Contact from "./Contact";
-
+import GitHubActivity from "./github/GitHubActivity";
 export {
+  GitHubActivity,
   Hero,
   Navbar,
   About,
