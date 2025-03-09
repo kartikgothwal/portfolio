@@ -148,7 +148,7 @@ const GitHubActivity = () => {
       {error && <p className="text-red-500">{error}</p>}
 
       {userDetails && (
-        <div className="p-4 bg-gray-200 rounded shadow mt-4">
+        <div className="p-4 bg-gray-200 rounded shadow mt-4 text-black">
           <h2 className="font-bold">User Details:</h2>
           <img
             src={userDetails.avatar_url}
